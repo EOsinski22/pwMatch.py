@@ -20,7 +20,7 @@ if not os.path.exists(args.secretsdump_results_file):
     exit(1)
 
 if not os.path.exists(args.hashtopolis_results_file):
-	print(f"Error: Hashtopolis Results File ({args.hashtopolis_results_file}) does not exist.")
+    print(f"Error: Hashtopolis Results File ({args.hashtopolis_results_file}) does not exist.")
     print("Please make sure the file is created and in the current directory.")
     exit(1)
 
