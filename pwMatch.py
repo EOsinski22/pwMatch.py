@@ -2,7 +2,6 @@ import argparse
 import os
 
 #EOsinski22
-
 #Description
 #Simple script to compare the results of a secretsdump.py outputfile to a hashtopolis output file, writes the matching values to a results file
 #TODO perform password analysis after results are obtained
