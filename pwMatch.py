@@ -21,7 +21,7 @@ if not os.path.exists(args.secretsdump_results_file):
     exit(1)
 
 if not os.path.exists(args.hashtopolis_results_file):
-    print(f"Error: Hashtopolis Results File ({args.hashtopolis_results_file}) does not exist.")
+	print(f"Error: Hashtopolis Results File ({args.hashtopolis_results_file}) does not exist.")
     print("Please make sure the file is created and in the current directory.")
     exit(1)
 
@@ -44,8 +44,7 @@ with open(args.secretsdump_results_file, "r") as file1, open(args.output_file, "
         match_found = False
         for line2 in file2:
             if line2.startswith(id + ":"):
-                line1 = line1[:-1]  # Remove trailing newline from line1
-                line1 += line2.split(":")[1]
+                line1 = f"{line1[:-1]} > {line2.split(':')[1]}"
                 match_found = True
                 match_count += 1
                 break
